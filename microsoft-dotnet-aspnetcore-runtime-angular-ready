@@ -5,3 +5,6 @@ RUN apt-get update -yq \
  && apt-get install -yq gnupg2 \
  && curl -sL https://deb.nodesource.com/setup_11.x | bash - \
  && apt-get install -yq nodejs
+
+# Install Angular CLI globaly so 'ng' commands can be executed
+RUN npm install -g @angular/cli
